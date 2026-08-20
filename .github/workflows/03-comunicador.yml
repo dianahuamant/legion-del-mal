@@ -3,15 +3,17 @@ name: Comunicador de la Legión
 on:
   workflow_dispatch:
     inputs:
-      villano:
-        description: '¿Qué villano envía el mensaje?'
+      cow_character:
+        description: 'Personaje'
         required: true
         type: choice
         options:
-          - Magneto
-          - Joker
-          - Mystic
-          - Brainiac
+          - eyes
+          - ghostbusters
+          - dragon
+          - fox
+          - king
+
       mensaje:
         description: 'mensaje para el consejo'
         required: true
