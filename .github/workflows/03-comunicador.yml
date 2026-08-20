@@ -29,10 +29,15 @@ jobs:
   transmitir_mensaje:
     runs-on: ubuntu-latest
     steps:
+      - name: Instalar el transmisor de la legión
+        run: sudo apt-get install -y cowsay
+
       - name: Imprimir inputs
         run: |
           echo "Inputs: "
           echo ""
           echo "Villano: ${{ inputs.villano }}"
           echo "Nivel: ${{ inputs.prioridad }}"
-          echo "Mensaje: ${{ inputs.mensaje }}"
+
+          echo "Mensaje"
+          cowsay -f eyes "${{ inputs.mensaje }}"
