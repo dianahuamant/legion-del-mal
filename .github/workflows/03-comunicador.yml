@@ -12,6 +12,18 @@ on:
           - Joker
           - Mystic
           - Brainiac
+      mensaje:
+        description: 'mensaje para el consejo'
+        required: true
+        default: 'la misión fue un éxito'
+      prioridad:
+        description: 'nivel de prioridad'
+        required: true
+        type: choice
+        options:
+          - normal
+          - alta
+          - crítica
 
 jobs:
   transmitir_mensaje:
