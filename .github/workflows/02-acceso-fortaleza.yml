@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: el agente llega a la fortaleza
         run: |
-          echo "Agente ${{ github.actor }}" llega a la fortaleza"
+          echo "Agente ${{ github.actor }} llega a la fortaleza"
           echo ""
           echo "Buscar archivos de la legión"
           ls -la
